@@ -6,7 +6,7 @@ var crypto = require('crypto')
 router.get('/', function (req, res) {
     var q = req['query'];
     var a = [];
-    a.push('fawefawef');
+    a.push('testing');
     a.push(q['timestamp']);
     a.push(q['nonce']);
 
