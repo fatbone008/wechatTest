@@ -3,6 +3,7 @@ var router = express.Router();
 
 
 router.get('/', function (req, res) {
+    console.log("-------req.parmas:", req.params);
     res.send('Birds home page')
 })
 
