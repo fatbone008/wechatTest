@@ -29,8 +29,7 @@ app.use('/', index);
 app.use('/users', users);
 app.get('/refreshToken', function (req, res, next) {
     qingqiu().then((d) => {
-        console.log(d);
-        token = d;
+        token = JSON.parse(d);
         res.sendStatus(200);
     }, err => {
         res.sendStatus(400);
@@ -62,7 +61,7 @@ app.use(function(err, req, res, next) {
 var j = schedule.scheduleJob('0 * * * *', function(){
     console.log('自动刷新token', new Date().getTime());
     qingqiu().then(d => {
-        token = d;
+        token = JSON.parse(d);
     });
 });
 
