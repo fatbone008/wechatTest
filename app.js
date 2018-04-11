@@ -36,7 +36,7 @@ app.get('/refreshToken', function (req, res, next) {
     });
 });
 app.get('/getToken', function (req, res, next) {
-    res.send(token);
+    res.send(token['access_token']);
 });
 
 // catch 404 and forward to error handler
@@ -57,7 +57,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var j = schedule.scheduleJob('42 * * * * *', function(){
+var j = schedule.scheduleJob('0 * * * *', function(){
     console.log('The answer to life, the universe, and everything!', new Date().getTime());
     qingqiu();
 });
