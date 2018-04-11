@@ -8,10 +8,9 @@ var qingqiu = function() {
             console.log('状态码：', res.statusCode);
             console.log('请求头：', res.headers);
 
-            resolve(res);
-
             res.on('data', (d) => {
                 process.stdout.write(d);
+                resolve(d.toString());
             });
 
         }).on('error', (e) => {
