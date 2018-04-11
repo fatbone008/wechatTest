@@ -36,6 +36,7 @@ app.get('/refreshToken', function (req, res, next) {
     });
 });
 app.get('/getToken', function (req, res, next) {
+    console.log('getToken:', token);
     res.send(token['access_token']);
 });
 
