@@ -29,6 +29,7 @@ app.use('/', index);
 app.use('/users', users);
 app.get('/refreshToken', function (req, res, next) {
     qingqiu().then((d) => {
+        console.log(d);
         token = d;
         res.sendStatus(200);
     }, err => {
