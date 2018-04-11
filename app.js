@@ -58,8 +58,10 @@ app.use(function(err, req, res, next) {
 });
 
 var j = schedule.scheduleJob('0 * * * *', function(){
-    console.log('The answer to life, the universe, and everything!', new Date().getTime());
-    qingqiu();
+    console.log('自动刷新token', new Date().getTime());
+    qingqiu().then(d => {
+        token = d;
+    });
 });
 
 module.exports = app;
