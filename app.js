@@ -40,6 +40,10 @@ app.get('/getToken', function (req, res, next) {
     res.send(token['access_token']);
 });
 
+// app.get('/app', function (req, res, next) {
+//     res.redirect('./dist/index.html');
+// })
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
