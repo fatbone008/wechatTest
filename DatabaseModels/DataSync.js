@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 var User = require('./UserModel');
+const Book = require('./Book')
 
 // Or you can simply use a connection uri
 const sequelize = new Sequelize('mysql://root:123456@localhost:3306/sys');
@@ -14,8 +15,11 @@ sequelize
     });
 
 var u = User(sequelize)
-u.sync();
+// u.sync();
+const book = Book(sequelize);
 
-u.create({firstName: 'Chan', lastName: 'YiHui'})
-.then(() => u.findOne({where:{firstName: 'Chan'}, raw:true}))
-.then(res => console.log(res));
+sequelize.sync();
+
+// u.create({firstName: 'Chan', lastName: 'YiHui'})
+// .then(() => u.findOne({where:{firstName: 'Chan'}, raw:true}))
+// .then(res => console.log(res));
