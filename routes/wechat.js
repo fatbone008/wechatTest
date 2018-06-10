@@ -18,7 +18,7 @@ router.get('/', function (req, res) {
         console.log("hack: ", hack );
         res.send(q['echostr']);
     }else{
-        console.log("hack: ", nothing);
+        console.log("hack: nothing");
         res.send('Birds home page');
     }
 })
