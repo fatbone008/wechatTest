@@ -1,9 +1,11 @@
 const Sequelize = require('sequelize');
 var User = require('./UserModel');
 const Book = require('./Book')
+const databaseStr = require('./DBConfig')
 
+console.log("数据库配置：", databaseStr)
 // Or you can simply use a connection uri
-const sequelize = new Sequelize('mysql://root:123456@localhost:3306/sys');
+const sequelize = new Sequelize(databaseStr);
 
 sequelize
     .authenticate()
