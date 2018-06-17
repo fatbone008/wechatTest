@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var schedule = require('node-schedule');
 var qingqiu = require('./utility/updateToken')
+var fs = require('fs')
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,6 +26,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/MP_verify_5Wvcg0Pz0fw9WY2E.txt', function (req, res) {
+    // res.writeHead(200, {"Content-Type": "text/plain"});
+    res.end(fs.readFileSync(__dirname + '/MP_verify_5Wvcg0Pz0fw9WY2E.txt'));
+})
 app.use('/', index);
 app.use('/users', users);
 app.get('/refreshToken', function (req, res, next) {
