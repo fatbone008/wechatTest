@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/dist'));
 app.use('/api', dataFetch);
 
 app.get('*', function(req, res) {
-    console.log("come on");
+    console.log("come on ", new Date().getTime());
     res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 app.listen(process.env.PORT || 3000);
