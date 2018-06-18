@@ -10,13 +10,18 @@ router.use('/wechat', wechat);
 router.get('/firstPage', (req, res) => {
     console.log("转发授权页面req: ", req)
     // 使用了superagent来发起请求
-    var superagent = require('superagent');
-    // 查询本机ip，这里需要根据实际情况选择get还是post
-    var sreq = superagent.get('http://anniesreading.com/firstPage');
-    sreq.pipe(res);
-    sreq.on('end', function(){
-        console.log('done');
+    var sreq = http.request({
+        host:     'anniesreading.com', // 目标主机
+        path:     'firstPage', // 目标路径
+        port: '3000',
+        method:   req.method // 请求方式
+    }, function(sres){
+        sres.pipe(res);
+        sres.on('end', function(){
+            console.log('done');
+        });
     });
+    sreq.end();
 })
 
 module.exports = router;
