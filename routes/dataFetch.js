@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+/**
+ * /api
+ */
 
 router.get('/testingJson', (req, res, next) => {
     res.json({'ab': 'cd'});
@@ -18,7 +21,7 @@ router.get('/getOpenId', (req, res, next) => {
         if (!error && response.statusCode == 200) {
             console.log(body) // Show the HTML for the baidu homepage.
         }
-        console.log("发送code后返回的response:", response);
+        console.log("发送code后返回的response:", body);
     })
     res.json({'你好':'hello'});
 });
