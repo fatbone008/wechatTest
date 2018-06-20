@@ -14,7 +14,7 @@ router.get('/getOpenId', (req, res, next) => {
 
     const appId = 'wx45c5430dac975c29'
 
-    const appSecret = '9ff7423489c2d33d535eb0d0f81c59fc'
+    const appSecret = 'f0ec7e371f1c6afa0dfb34f6cdb196b3'
 
     console.log("即将向微信发送code换区openID -------------》》》");
     request(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=${appSecret}&code=${code}&grant_type=authorization_code`, function (error, response, body) {
