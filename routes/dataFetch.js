@@ -17,13 +17,24 @@ router.get('/getOpenId', (req, res, next) => {
     const appSecret = 'f0ec7e371f1c6afa0dfb34f6cdb196b3'
 
     console.log("即将向微信发送code换区openID -------------》》》");
-    request(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=${appSecret}&code=${code}&grant_type=authorization_code`, function (error, response, body) {
+    request(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=${appSecret}&code=${code}&grant_type=authorization_code`
+        , function (error, response, body) {
+
         if (!error && response.statusCode == 200) {
             console.log(body) // Show the HTML for the baidu homepage.
+            if(body['openid']){
+                res.json(body['openid'])
+            } else {
+                console.error("微信没有返回openid:", body);
+                res.sendStatus(500);
+            }
+        } else {
+            console.error("微信请求openId出错：", error)
+            res.sendStatus(500);
         }
         console.log("发送code后返回的response:", body);
     })
-    res.json({'你好':'hello'});
+    // res.json({'你好':'hello'});
 });
 
 module.exports = router;
