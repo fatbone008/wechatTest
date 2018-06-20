@@ -13,6 +13,7 @@ router.get('getOpenId', (req, res, next) => {
 
     const appSecret = '9ff7423489c2d33d535eb0d0f81c59fc'
 
+    console.log("即将向微信发送code换区openID -------------》》》");
     request(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=${appSecret}&code=${code}&grant_type=authorization_code`, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             console.log(body) // Show the HTML for the baidu homepage.
