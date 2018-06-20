@@ -20,7 +20,7 @@ router.get('/getOpenId', (req, res, next) => {
         }
         console.log("发送code后返回的response:", response);
     })
-    res.end();
+    res.json({'你好':'hello'});
 });
 
 module.exports = router;
