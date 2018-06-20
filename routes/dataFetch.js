@@ -6,7 +6,7 @@ router.get('/testingJson', (req, res, next) => {
     res.json({'ab': 'cd'});
 })
 
-router.get('getOpenId', (req, res, next) => {
+router.get('/getOpenId', (req, res, next) => {
     const code = req.query.code;
 
     const appId = 'wx45c5430dac975c29'

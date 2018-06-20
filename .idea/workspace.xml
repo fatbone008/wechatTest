@@ -100,8 +100,8 @@
       <file leaf-file-name="dataFetch.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -210,11 +210,6 @@
               <item name="wechatTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechatTest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="wechatTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechatTest" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -286,12 +281,12 @@
       <workItem from="1528771210790" duration="165000" />
       <workItem from="1528967425790" duration="780000" />
       <workItem from="1529475566716" duration="18000" />
-      <workItem from="1529475720808" duration="383000" />
+      <workItem from="1529475720808" duration="808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45239000" />
+    <option name="totallyTimeSpent" value="45664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-240" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -686,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
