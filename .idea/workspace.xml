@@ -2,53 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82b3c15-bb37-4b9c-b028-41801db3d5b7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/3rdpartylicenses.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/BOOKpic.dd78fe5fb534aa1c1baf.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/audio/testing.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/config.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/animation.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/fontello-codes.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/fontello-embedded.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/fontello-ie7-codes.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/fontello-ie7.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/css/fontello.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/demo.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/font/fontello.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/font/fontello.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/font/fontello.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/font/fontello.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/fontello-0a6a1400/font/fontello.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/BOOKpic.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/Group37@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/Star@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/b20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/bella-huang-596578-unsplash.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/block.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/block2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/bookpage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/firework.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/happyface.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/headPic.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/myrecordpass.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/recordcar-back.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/slide1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/slide2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/slide3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/slide4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/snowmount.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/swiperCardIcon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/images/unhappy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bella-huang-596578-unsplash.84bc330ad849884cac87.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/firework.5ce33ca80a481c0c9e6b.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/inline.318b50c57b4eba3d437b.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/main.e5c5e9ba7f090b63b7e3.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/polyfills.194f3db5c95bb635c66b.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/snowmount.73754549888505a50f8a.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.c191fa75497a9ffca096.bundle.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dist/3rdpartylicenses.txt" afterPath="$PROJECT_DIR$/dist/3rdpartylicenses.txt" />
+      <change beforePath="$PROJECT_DIR$/dist/MP_verify_5Wvcg0Pz0fw9WY2E.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/main.c3ba79152513706e6da8.bundle.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/routes/dataFetch.js" afterPath="$PROJECT_DIR$/routes/dataFetch.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -66,7 +24,7 @@
       <file leaf-file-name="DBConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseModels/DBConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="0">
               <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
@@ -136,8 +94,8 @@
       <file leaf-file-name="dataFetch.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="498">
+              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -319,25 +277,26 @@
       <workItem from="1529475566716" duration="18000" />
       <workItem from="1529475720808" duration="4643000" />
       <workItem from="1529506905989" duration="1210000" />
-      <workItem from="1529896862229" duration="791000" />
+      <workItem from="1529896862229" duration="3598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51500000" />
+    <option name="totallyTimeSpent" value="54307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-240" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13849394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13849394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2747934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2747934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -346,7 +305,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -652,7 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/MP_verify_5Wvcg0Pz0fw9WY2E.txt" />
     <entry file="file://$PROJECT_DIR$/config/wechat.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -703,16 +660,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseModels/DBConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="0">
           <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/MP_verify_5Wvcg0Pz0fw9WY2E.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="498">
+          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -159,6 +159,10 @@ maintained libraries used by this software which have their own
 licenses; we recommend you read them, as their terms may differ from the
 terms above.
 
+@angular/http@5.2.9
+MIT
+MIT
+
 markdown@0.5.0
 MIT
 MIT
