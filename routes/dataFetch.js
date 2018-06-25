@@ -33,10 +33,11 @@ router.get('/getOpenId', (req, res, next) => {
                 sendQuizingServer(body['openid'], res => {
                     res.json(body['openid'])
                 }, error => {
-                    console.error("openId保存失败")
+                    console.error("openId保存失败", error)
                     res.write('openId保存失败');
                     res.sendStatus(500);
                 })
+
             } else {
                 console.error("微信没有返回openid:", body);
                 res.sendStatus(500);
