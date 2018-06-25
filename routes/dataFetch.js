@@ -52,7 +52,7 @@ router.get('/getOpenId', (req, res, next) => {
 
 var sendQuizingServer = function (userid) {
     return new Promise((resolve, reject) => {
-        request('localhost:2000/use' + userid, function (error, response, body) {
+        request('http://localhost:2000/use' + userid, function (error, response, body) {
             if(!error && response.statusCode === 200){
                 console.log("保存userid成功:", body);
                 resolve(body);
