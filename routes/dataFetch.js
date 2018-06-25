@@ -21,9 +21,12 @@ router.get('/getOpenId', (req, res, next) => {
         , function (error, response, body) {
 
         if (!error && response.statusCode == 200) {
-            console.log(body) // Show the HTML for the baidu homepage.
+            console.log(body)
             if(body['openid']){
-                res.json(body['openid'])
+                // save the openid/userid to mysql
+                sendQuizingServer(body['openid'], res => {
+                    res.json(body['openid'])
+                })
             } else {
                 console.error("微信没有返回openid:", body);
                 res.sendStatus(500);
@@ -37,4 +40,18 @@ router.get('/getOpenId', (req, res, next) => {
     // res.json({'你好':'hello'});
 });
 
+var sendQuizingServer = function (userid) {
+    return new Promise((resolve, reject) => {
+        request('localhost:2000/use' + userid, function (error, response, body) {
+            if(!error && response.statusCode === 200){
+                console.log("保存userid成功:", body);
+                resolve(body);
+            } else if (error) {
+                reject(error);
+            } else {
+                reject(response.statusCode);
+            }
+        })
+    })
+}
 module.exports = router;
