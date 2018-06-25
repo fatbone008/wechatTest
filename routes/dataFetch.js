@@ -26,7 +26,7 @@ router.get('/getOpenId', (req, res, next) => {
         , function (error, response, body) {
 
         if (!error && response.statusCode == 200) {
-            console.log(body)
+            console.log(body['openid'])
             if(body['openid']){
                 // save the openid/userid to mysql ---------------->> openid
                 sendQuizingServer(body['openid'], res => {
