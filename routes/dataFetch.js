@@ -30,7 +30,7 @@ router.get('/getOpenId', (req, res, next) => {
             console.log(body['openid'])
             if(body['openid']){
                 // save the openid/userid to mysql ---------------->> openid
-                sendQuizingServer(body['openid']).then(res => {
+                sendQuizingServer(body['openid']).then(() => {
                     res.json(body['openid'])
                 }, error => {
                     console.error("openId保存失败", error)
