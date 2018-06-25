@@ -24,6 +24,7 @@ router.get('/getOpenId', (req, res, next) => {
     // get openid through code ----------------->> code
     request(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=${appSecret}&code=${code}&grant_type=authorization_code`
         , function (error, response, body) {
+        body = JSON.parse(body);
 
         if (!error && response.statusCode == 200) {
             console.log(body['openid'])
