@@ -3,7 +3,7 @@ const MattDB = {
     password: 'Matt123456',
     host: 'rm-2zetudt56poki91r6yo.mysql.rds.aliyuncs.com',
     port: 3306,
-    database: 'sys'
+    database: 'testdb'
 }
 
 const local = {

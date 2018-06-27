@@ -16,12 +16,41 @@ sequelize
         console.error('Unable to connect to the database:', err);
     });
 
-var u = User(sequelize)
+// var u = User(sequelize)
 // u.sync();
 const book = Book(sequelize);
 
-sequelize.sync();
+// sequelize.sync();
 
 // u.create({firstName: 'Chan', lastName: 'YiHui'})
 // .then(() => u.findOne({where:{firstName: 'Chan'}, raw:true}))
 // .then(res => console.log(res));
+
+book.bulkCreate(
+    [
+      {
+        img: 'https://anniesreading.oss-cn-beijing.aliyuncs.com/bookpage.png',
+        englighAuthor: 'alipapa',
+        englishTitle: 'The old man and sea',
+        chineseAuthor: '阿里巴巴',
+        chineseTitle: '老人与海',
+        level: '中'
+      },
+      {
+        img: 'https://anniesreading.oss-cn-beijing.aliyuncs.com/bookpage.png',
+        englighAuthor: 'alipapa',
+        englishTitle: 'The old man and sea',
+        chineseAuthor: '阿里巴巴',
+        chineseTitle: '老人与海',
+        level: '中'
+      },
+      {
+        img: 'https://anniesreading.oss-cn-beijing.aliyuncs.com/bookpage.png',
+        englighAuthor: 'alipapa',
+        englishTitle: 'The old man and sea',
+        chineseAuthor: '阿里巴巴',
+        chineseTitle: '老人与海',
+        level: '中'
+      }
+    ]
+);
