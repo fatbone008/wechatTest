@@ -14,7 +14,7 @@ const local = {
     database: 'sys'
 }
 
-const r = process.env.db === 'matt' ? MattDB : local;
+const r = process.env.db === 'matt' ? MattDB : MattDB;
 
 const str = `mysql://${r.user}:${r.password}@${r.host}:${r.port}/${r.database}`;
 

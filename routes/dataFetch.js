@@ -10,7 +10,7 @@ router.get('/testingJson', (req, res, next) => {
     res.json({'ab': 'cd'});
 })
 
-router.use('/book', bookRouter);
+router.use('/books', bookRouter);
 
 /**
  * 获取到code后请求换区openid，拿到openid后保存到数据库成功了才返回openid给前端。

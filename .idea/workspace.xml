@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a82b3c15-bb37-4b9c-b028-41801db3d5b7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/book/bookRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DatabaseModels/DBConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseModels/DBConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseModels/DataSync.js" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseModels/DataSync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/book/bookRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/book/bookRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/dataFetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/dataFetch.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="DBConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseModels/DBConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="340">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -32,8 +30,8 @@
       <file leaf-file-name="DataSync.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseModels/DataSync.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="101">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="7" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -42,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/Server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -50,8 +48,8 @@
       <file leaf-file-name="Book.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatabaseModels/Book.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,8 +57,8 @@
       <file leaf-file-name="dataFetch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="191">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding>
                 <element signature="e#359#1654#0" />
                 <element signature="e#1789#2230#0" />
@@ -72,8 +70,8 @@
       <file leaf-file-name="bookRouter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/book/bookRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -115,9 +113,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/wechat.js" />
         <option value="$PROJECT_DIR$/config/wechat.config.js" />
-        <option value="$PROJECT_DIR$/DatabaseModels/DBConfig.js" />
         <option value="$PROJECT_DIR$/DatabaseModels/DataSync.js" />
         <option value="$PROJECT_DIR$/routes/dataFetch.js" />
+        <option value="$PROJECT_DIR$/DatabaseModels/DBConfig.js" />
         <option value="$PROJECT_DIR$/routes/book/bookRouter.js" />
       </list>
     </option>
@@ -158,6 +156,11 @@
             <path>
               <item name="wechatTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechatTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatTest" type="462c0819:PsiDirectoryNode" />
+              <item name="DatabaseModels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wechatTest" type="b2602c69:ProjectViewProjectNode" />
@@ -261,18 +264,18 @@
       <workItem from="1529896862229" duration="6658000" />
       <workItem from="1529938633782" duration="168000" />
       <workItem from="1529940394559" duration="1603000" />
-      <workItem from="1530104885999" duration="1714000" />
+      <workItem from="1530104885999" duration="3001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60852000" />
+    <option name="totallyTimeSpent" value="62139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13742071" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13742071" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -280,7 +283,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27431422" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27431422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -614,31 +617,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseModels/DBConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseModels/Book.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        <state relative-caret-position="191">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="e#359#1654#0" />
             <element signature="e#1789#2230#0" />
@@ -648,15 +644,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseModels/DataSync.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="101">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseModels/DBConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/book/bookRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
