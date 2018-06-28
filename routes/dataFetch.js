@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var bookRouter = require('./book/bookRouter')
 /**
  * /api
  */
@@ -8,6 +9,8 @@ var request = require('request');
 router.get('/testingJson', (req, res, next) => {
     res.json({'ab': 'cd'});
 })
+
+router.use('/books', bookRouter);
 
 /**
  * 获取到code后请求换区openid，拿到openid后保存到数据库成功了才返回openid给前端。
@@ -30,7 +33,7 @@ router.get('/getOpenId', (req, res, next) => {
             console.log(body['openid'])
             if(body['openid']){
                 // save the openid/userid to mysql ---------------->> openid
-                sendQuizingServer(body['openid']).then(res => {
+                sendQuizingServer(body['openid']).then(() => {
                     res.json(body['openid'])
                 }, error => {
                     console.error("openId保存失败", error)
@@ -51,9 +54,14 @@ router.get('/getOpenId', (req, res, next) => {
     // res.json({'你好':'hello'});
 });
 
+/**
+ * 从Seven的服务器获取用户考试信息。
+ * @param userid
+ * @returns {Promise<any>}
+ */
 var sendQuizingServer = function (userid) {
     return new Promise((resolve, reject) => {
-        request('http://47.105.49.208:2000/use/' + userid, function (error, response, body) {
+        request('http://47.105.49.208:2000/user/' + userid, function (error, response, body) {
             if(!error && response.statusCode === 200){
                 console.log("保存userid成功:", body);
                 resolve(body);
@@ -65,4 +73,5 @@ var sendQuizingServer = function (userid) {
         })
     })
 }
+
 module.exports = router;
