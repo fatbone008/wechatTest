@@ -3,7 +3,8 @@ const Sequelize  = require('sequelize');
 module.exports = function (sequelize) {
     return sequelize.define('book', {
         englishTitle: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING,
+            unique: true
         },
         chineseTitle: {
             type: Sequelize.STRING
