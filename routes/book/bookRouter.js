@@ -4,11 +4,16 @@ var router = express.Router();
 const Sequelize = require('sequelize');
 const Book = require('../../DatabaseModels/Book')
 const databaseStr = require('../../DatabaseModels/DBConfig')
+const Chapter = require('../../DatabaseModels/Chapter');
 
 
 const sequelize = new Sequelize(databaseStr);
 const book = Book(sequelize);
+const chapter = Chapter(sequelize);
 
+/**
+ * 返回所有书籍
+ */
 router.get('/', function (req, res, next) {
     book.findAll().then(books => {
         console.log('返回成功：', books);
@@ -18,14 +23,22 @@ router.get('/', function (req, res, next) {
         res.writeHead(500);
         res.end(err);
     });
-    // res.json([{
-    //     img: 'https://anniesreading.oss-cn-beijing.aliyuncs.com/bookpage.png',
-    //     englighAuthor: 'alipapa',
-    //     englishTitle: 'The old man and sea',
-    //     chineseAuthor: '阿里巴巴',
-    //     chineseTitle: '老人与海',
-    //     level: '中'
-    // }]);
+});
+
+/**
+ * 通过书籍ID返回指定书籍的目录
+ */
+router.get('/:bookId', function (req, res, next) {
+    chapter.findAll({
+        where: {
+            bookId: req.params.bookId
+        }
+    }).then(chapters => {
+        res.json(chapters)
+    }).catch(err => {
+        res.writeHead(500);
+        res.end(err);
+    })
 })
 
 module.exports = router;
