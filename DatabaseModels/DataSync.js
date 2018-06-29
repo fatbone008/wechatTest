@@ -1,9 +1,10 @@
 const Sequelize = require('sequelize');
 const databaseStr = require('./DBConfig');
 
-var User = require('./UserModel');
+const User = require('./UserModel');
 const Book = require('./Book');
 const Chapter = require('./Chapter');
+const Audio = require('./Audio');
 
 console.log("数据库配置：", databaseStr);
 // Or you can simply use a connection uri
@@ -22,8 +23,11 @@ const u = User(sequelize)
 // u.sync();
 const book = Book(sequelize);
 const chapter = Chapter(sequelize);
+const audio = Audio(sequelize);
 
-chapter.belongsTo(book);
+// chapter.belongsTo(book);
+audio.belongsTo(book)
+audio.belongsTo(chapter);
 
 sequelize.sync();
 

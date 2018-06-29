@@ -5,11 +5,13 @@ const Sequelize = require('sequelize');
 const Book = require('../../DatabaseModels/Book')
 const databaseStr = require('../../DatabaseModels/DBConfig')
 const Chapter = require('../../DatabaseModels/Chapter');
+const Audio = require('../../DatabaseModels/Audio');
 
 
 const sequelize = new Sequelize(databaseStr);
 const book = Book(sequelize);
 const chapter = Chapter(sequelize);
+const audio = Audio(sequelize);
 
 /**
  * 返回所有书籍
@@ -41,4 +43,18 @@ router.get('/:bookId', function (req, res, next) {
     })
 })
 
+/**
+ * 返回指定书籍（bookId）的指定章节（chapterId）下的录音文本和时间
+ */
+router.get('/:bookId/:chapterId', function (req, res, next) {
+    audio.findAll({
+        where: {
+            bookId: req.params.bookId,
+            chapterId: req.params.chapterId
+        },
+        order:[
+            ['time']
+        ]
+    })
+})
 module.exports = router;
