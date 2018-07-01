@@ -55,6 +55,12 @@ router.get('/:bookId/:chapterId', function (req, res, next) {
         order:[
             ['time']
         ]
+    }).then(audios => {
+        console.log(audios);
+        res.json(audios);
+    }).catch(err => {
+        res.writeHead(500);
+        res.end(err);
     })
 })
 module.exports = router;

@@ -7,6 +7,9 @@ module.exports = function (sequelize) {
         },
         text: {
             type: Sequelize.STRING
+        },
+        origin: {
+            type: Sequelize.STRING
         }
     })
 }
