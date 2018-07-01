@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a82b3c15-bb37-4b9c-b028-41801db3d5b7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatabaseModels/DataSync.js" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseModels/DataSync.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.152d0083a65e27ccc17d.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.1156671418e6dd84d1c5.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/e2j.js" beforeDir="false" afterPath="$PROJECT_DIR$/utility/e2j.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yeah.json" beforeDir="false" afterPath="$PROJECT_DIR$/yeah.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataSync.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataSync.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DatabaseModels/DataSync.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-415">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="234">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yeah.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yeah.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-end-column="10753" />
             </state>
           </provider>
         </entry>
@@ -36,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataFetch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dataFetch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+            <state relative-caret-position="353">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -123,10 +136,11 @@
         <option value="$PROJECT_DIR$/DatabaseModels/DBConfig.js" />
         <option value="$PROJECT_DIR$/DatabaseModels/Book.js" />
         <option value="$PROJECT_DIR$/DatabaseModels/Chapter.js" />
-        <option value="$PROJECT_DIR$/DatabaseModels/DataSync.js" />
-        <option value="$PROJECT_DIR$/utility/e2j.js" />
         <option value="$PROJECT_DIR$/DatabaseModels/Audio.js" />
         <option value="$PROJECT_DIR$/routes/book/bookRouter.js" />
+        <option value="$PROJECT_DIR$/utility/e2j.js" />
+        <option value="$PROJECT_DIR$/yeah.json" />
+        <option value="$PROJECT_DIR$/DatabaseModels/DataSync.js" />
       </list>
     </option>
   </component>
@@ -253,12 +267,12 @@
       <workItem from="1530104885999" duration="3502000" />
       <workItem from="1530196444486" duration="2094000" />
       <workItem from="1530236644784" duration="7865000" />
-      <workItem from="1530413294379" duration="9797000" />
+      <workItem from="1530413294379" duration="13511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85681000" />
+    <option name="totallyTimeSpent" value="89395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -599,24 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utility/e2j.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DatabaseModels/Chapter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DatabaseModels/DataSync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-415">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -634,17 +634,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yeah.json">
+    <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+        <state relative-caret-position="353">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/dataFetch.js">
+    <entry file="file://$PROJECT_DIR$/utility/e2j.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yeah.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-end-column="10753" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseModels/DataSync.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
         </state>
       </provider>
     </entry>
