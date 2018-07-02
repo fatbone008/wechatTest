@@ -44,6 +44,25 @@ router.get('/:bookId', function (req, res, next) {
 })
 
 /**
+ * 获取书籍某章音频
+ */
+router.get('/audio/:bookId/:chapterId', function (req, res, next) {
+    chapter.find({
+        attributes: ['audioURL'],
+        where: {
+            bookId: req.params.bookId,
+            id: req.params.chapterId
+        }
+    }).then(audioURL => {
+        console.log(audioURL);
+        res.json(audioURL);
+    }).catch(err => {
+        res.writeHead(500);
+        res.end(err);
+    })
+})
+
+/**
  * 返回指定书籍（bookId）的指定章节（chapterId）下的录音文本和时间
  */
 router.get('/:bookId/:chapterId', function (req, res, next) {
@@ -51,10 +70,7 @@ router.get('/:bookId/:chapterId', function (req, res, next) {
         where: {
             bookId: req.params.bookId,
             chapterId: req.params.chapterId
-        },
-        order:[
-            ['time']
-        ]
+        }
     }).then(audios => {
         console.log(audios);
         res.json(audios);
@@ -63,4 +79,5 @@ router.get('/:bookId/:chapterId', function (req, res, next) {
         res.end(err);
     })
 })
+
 module.exports = router;

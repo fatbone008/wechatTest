@@ -7,6 +7,9 @@ module.exports = function (sequelize) {
         },
         chapterName: {
             type: Sequelize.STRING
+        },
+        audioURL: {
+            type: Sequelize.STRING
         }
     })
 }
