@@ -6,10 +6,10 @@ module.exports = function (sequelize) {
             type: Sequelize.STRING
         },
         text: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(1024)
         },
         origin: {
-            type: Sequelize.STRING
+            type: Sequelize.STRING(1024)
         }
     })
 }

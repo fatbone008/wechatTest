@@ -81,6 +81,12 @@ sequelize.sync();
 //     o.chapterId = 21;
 //     return o;
 // });
-// audio.bulkCreate(b).then(res => {
-//     console.log("上传成功", res);
-// })
+let execute = require('../utility/e2j')
+let f = async function () {
+    let b = await execute();
+    console.log("厉害了", b[142]);
+    audio.bulkCreate(b).then(res => {
+        console.log("上传成功", res);
+    })
+}
+f();
