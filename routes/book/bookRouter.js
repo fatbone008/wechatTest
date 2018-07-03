@@ -6,12 +6,17 @@ const Book = require('../../DatabaseModels/Book')
 const databaseStr = require('../../DatabaseModels/DBConfig')
 const Chapter = require('../../DatabaseModels/Chapter');
 const Audio = require('../../DatabaseModels/Audio');
+const Question = require('../../DatabaseModels/Question');
+const Answers = require('../../DatabaseModels/Answers');
 
 
 const sequelize = new Sequelize(databaseStr);
 const book = Book(sequelize);
 const chapter = Chapter(sequelize);
 const audio = Audio(sequelize);
+const question = Question(sequelize);
+const answers = Answers(sequelize);
+question.hasMany(answers);
 
 /**
  * 返回所有书籍
@@ -63,6 +68,28 @@ router.get('/audio/:bookId/:chapterId', function (req, res, next) {
 })
 
 /**
+ * 获取指定章节的所有问题信息以及答案选项
+ */
+router.get('/qa/:chapterId', function (req, res, next) {
+    console.log("路由到我了哟。");
+    // 关联式查找问题和答案
+    question.findAll({
+        where: {
+            chapterId: req.params.chapterId
+        },
+        include: [{
+            model: answers
+        }]
+    }).then(questions => {
+        console.log(questions)
+        res.json(questions)
+    }).catch(err => {
+        res.writeHead(500);
+        res.end(err);
+    })
+})
+
+/**
  * 返回指定书籍（bookId）的指定章节（chapterId）下的录音文本和时间
  */
 router.get('/:bookId/:chapterId', function (req, res, next) {
@@ -78,6 +105,7 @@ router.get('/:bookId/:chapterId', function (req, res, next) {
         res.writeHead(500);
         res.end(err);
     })
-})
+});
+
 
 module.exports = router;
