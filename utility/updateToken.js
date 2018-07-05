@@ -9,7 +9,7 @@ var qingqiu = function() {
             console.log('access_token 请求头：', res.headers);
 
             res.on('data', (d) => {
-                let access_token = d.toString();
+                let access_token = JSON.parse(d.toString());
                 console.log('qingqiu_1:', access_token);
                 https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${access_token['access_token']}&type=jsapi`, response => {
                     response.on('data', data => {
