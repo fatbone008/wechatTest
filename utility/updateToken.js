@@ -13,7 +13,7 @@ var qingqiu = function() {
                 https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`, response => {
                     response.on('data', data => {
                         console.log(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`);
-                        console.log('jsapi_ticket:', data);
+                        console.log('jsapi_ticket:', data.toString());
                         process.stdout.write(d);
                         resolve(d.toString());
                     })
