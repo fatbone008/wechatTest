@@ -17,7 +17,7 @@ var qingqiu = function() {
                         let jsapi_ticket = JSON.parse(data.toString());
                         console.log('jsapi_ticket:', jsapi_ticket);
                         access_token['jsapi_ticket'] = jsapi_ticket;
-                        process.stdout.write(access_token);
+                        // process.stdout.write(access_token);
                         resolve(access_token);
                     })
                 }).on('error', e => {
