@@ -9,8 +9,9 @@ var qingqiu = function() {
             console.log('access_token 请求头：', res.headers);
 
             res.on('data', (d) => {
-                console.log('qingqiu_1:', d.toString());
-                https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d.toString()['access_token']}&type=jsapi`, response => {
+                let access_token = d.toString();
+                console.log('qingqiu_1:', access_token);
+                https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${access_token['access_token']}&type=jsapi`, response => {
                     response.on('data', data => {
                         console.log(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`);
                         console.log('jsapi_ticket:', data.toString());
