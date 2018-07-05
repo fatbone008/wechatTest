@@ -14,9 +14,11 @@ var qingqiu = function() {
                 https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${access_token['access_token']}&type=jsapi`, response => {
                     response.on('data', data => {
                         console.log(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`);
-                        console.log('jsapi_ticket:', data.toString());
-                        process.stdout.write(d);
-                        resolve(d.toString());
+                        let jsapi_ticket = JSON.parse(data.toString());
+                        console.log('jsapi_ticket:', jsapi_ticket);
+                        access_token['jsapi_ticket'] = jsapi_ticket;
+                        process.stdout.write(access_token);
+                        resolve(access_token);
                     })
                 }).on('error', e => {
                     console.error('jsapi_ticket报错：', e);
