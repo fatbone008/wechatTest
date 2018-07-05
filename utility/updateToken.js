@@ -10,7 +10,7 @@ var qingqiu = function() {
 
             res.on('data', (d) => {
                 console.log('qingqiu_1:', d.toString());
-                https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`, response => {
+                https.get(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d.toString()['access_token']}&type=jsapi`, response => {
                     response.on('data', data => {
                         console.log(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`);
                         console.log('jsapi_ticket:', data.toString());
