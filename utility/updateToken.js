@@ -20,6 +20,11 @@ var qingqiu = function() {
                     response.on('data', data => {
                         console.log(`https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=${d['access_token']}&type=jsapi`);
                         let jsapi_ticket = JSON.parse(data.toString());
+
+                        if(jsapi_ticket.errcode != 0) {
+                            reject(jsapi_ticket.errmsg);
+                        }
+
                         console.log('jsapi_ticket:', jsapi_ticket);
                         access_token['jsapi_ticket'] = jsapi_ticket['ticket'];
                         // process.stdout.write(access_token);
