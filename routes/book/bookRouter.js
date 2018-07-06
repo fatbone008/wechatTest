@@ -66,12 +66,10 @@ router.get('/audio/:bookId/:chapterId', function (req, res, next) {
         res.end(err);
     })
 })
-
 /**
  * 获取指定章节的所有问题信息以及答案选项
  */
 router.get('/qa/:chapterId', function (req, res, next) {
-    console.log("路由到我了哟。");
     // 关联式查找问题和答案
     question.findAll({
         where: {

@@ -1,5 +1,4 @@
 var config = require('../config/wechat.config');
-var access_token;
 var https = require('https');
 
 var qingqiu = function() {

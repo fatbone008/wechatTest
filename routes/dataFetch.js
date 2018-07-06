@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var bookRouter = require('./book/bookRouter')
+var bookRouter = require('./book/bookRouter');
+var userRouter = require('./user/userRouter');
 /**
  * /api
  */
@@ -11,6 +12,8 @@ router.get('/testingJson', (req, res, next) => {
 })
 
 router.use('/books', bookRouter);
+
+router.use('/user', userRouter);
 
 /**
  * 获取到code后请求换区openid，拿到openid后保存到数据库成功了才返回openid给前端。

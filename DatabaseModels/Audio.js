@@ -10,6 +10,9 @@ module.exports = function (sequelize) {
         },
         origin: {
             type: Sequelize.STRING(1024)
+        },
+        imgUrl: {
+            type: Sequelize.STRING(1024)
         }
     })
 }

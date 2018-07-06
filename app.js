@@ -35,6 +35,7 @@ app.use('/users', users);
 app.get('/refreshToken', function (req, res, next) {
     qingqiu().then((d) => {
         token = JSON.parse(d);
+        console.log("token:", token);
         res.sendStatus(200);
     }, err => {
         res.sendStatus(400);
@@ -42,7 +43,7 @@ app.get('/refreshToken', function (req, res, next) {
 });
 app.get('/getToken', function (req, res, next) {
     console.log('getToken:', token);
-    res.send(token['access_token']);
+    res.send(token);
 });
 
 // app.get('/app', function (req, res, next) {
@@ -74,4 +75,7 @@ var j = schedule.scheduleJob('0 * * * *', function(){
     });
 });
 
+qingqiu().then(res => {
+    console.log("开始启动 - token:", token);
+})
 module.exports = app;
