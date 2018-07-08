@@ -35,7 +35,7 @@ app.use('/users', users);
 app.get('/refreshToken', function (req, res, next) {
     qingqiu().then((d) => {
         console.log("请求回来的数据qingqiu:", d);
-        token = JSON.parse(d);
+        token = d;
         console.log("token:", token);
         res.sendStatus(200);
     }, err => {
